@@ -1,0 +1,395 @@
+body {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Heebo', sans-serif;
+}
+
+a:link,
+a:visited {
+    color: #7FB2F0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4e7ac7;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px 0 0;
+}
+
+nav ul li a {
+    font-size: 20px;
+}
+
+nav ul li a:visited,
+nav ul li a:link,
+.f.left span a:visited,
+.f.left span a:link {
+    color: black;
+}
+
+header {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 24px auto 24px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.header-menu li {
+    display: inline-flex;
+    list-style: none;
+    font-size: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+.logo .name-2 {
+    color: grey;
+}
+
+.banner {
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+}
+
+.banner-left img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .banner-left {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.banner-content {
+    line-height: normal;
+    width: 40%;
+}
+
+.banner-content p {
+    font-weight: bold;
+    margin: 24px 0 24px 0;
+    color: #3E3F40;
+}
+
+.banner-button a:link {
+    color: #D9D9D9;
+}
+
+.banner-content h3 {
+    color: #3E3F40;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.banner-button {
+    background-color: #3E3F40;
+    color: #D9D9D9;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    width: 80%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content .content-left {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.main-content .content-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    width: 40%;
+}
+
+.Orientation-date,
+.our-campus,
+.our-guest,
+.Design-Prototype,
+.Now-and-then {
+    display: flex;
+    align-items: center;
+}
+
+.content-left img {
+    width: 100%;
+    height: auto;
+}
+
+.content-right img {
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+
+.content-right .info {
+    width: 65%;
+}
+
+.info p {
+    margin: 8px 0;
+    color: grey;
+    font-size: 18px;
+}
+
+.info h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info {
+    line-height: 1.5;
+}
+
+.Orientation-date:hover,
+.our-campus:hover,
+.our-guest:hover,
+.Design-Prototype:hover,
+.Now-and-then:hover {
+    background-color: #D9D9D9;
+}
+
+.quote-left h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+p {
+    color: grey;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.quote-left .author {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.courses {
+    background-color: #D9D9D9;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    /*margin-bottom: 32px;*/
+}
+
+.title h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.courses-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 32px 72px;
+}
+
+.course {
+    margin: 0 32px 32px 0;
+    background-color: white;
+    width: 30%;
+}
+
+.course img {
+    width: 100%;
+}
+
+.course-info {
+    margin: 16px 0 32px 16px;
+}
+
+.course-info h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #3E3F40;
+}
+
+.course-info .middle {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.img.course {
+    width: 100%;
+}
+
+.content-left video {
+    width: 100%;
+}
+
+.Design-Prototype {
+    margin-top: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 24px;
+    border-top: 1px solid grey;
+    height: 80px;
+}
+
+footer .f {
+    margin-top: 16px;
+}
+
+.f.left span a {
+    margin-left: 20px;
+}
+
+
+/*Responsive Design for mobile divece*/
+
+.responsive {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        display: none;
+    }
+    .responsive.nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+        margin: 12px;
+    }
+    .responsive.nav img {
+        width: 50px;
+        height: auto;
+    }
+    .banner {
+        background-color: #D9D9D9;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .banner .banner-left {
+        width: 100%;
+        margin: 0;
+    }
+    .banner-content {
+        width: 100%;
+        margin: 32px 16px;
+    }
+    .banner-content h3 {
+        font-size: 30px;
+    }
+    .banner-button {
+        margin: auto;
+    }
+    .main-content .content-left {
+        display: none;
+    }
+    .main-content .content-right {
+        display: block;
+        margin-top: 16px;
+        width: 100%;
+    }
+    .Orientation-date,
+    .our-campus,
+    .our-guest,
+    .Design-Prototype,
+    .Now-and-then {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .content-right img {
+        display: none;
+        width: -webkit-fill-available;
+        height: auto;
+        margin: 16px;
+    }
+    .content-right .info {
+        width: auto;
+        margin: 16px;
+    }
+    .responsive.img {
+        display: block;
+        width: -webkit-fill-available;
+    }
+    .course img {
+        display: none;
+    }
+    .courses {
+        background-color: white;
+        border-top: 0.2px solid #D9D9D9;
+        border-bottom: 0.2px solid #D9D9D9;
+    }
+    .course-info p {
+        display: none;
+    }
+    .course-info {
+        margin: 0px;
+        background: #D9D9D9;
+        width: 100%;
+    }
+    .courses-menu {
+        display: block;
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+        margin: 0 0 32px 0;
+    }
+    .course {
+        margin: 8px 16px 8px 16px;
+        width: -webkit-fill-available;
+    }
+    .course-info h3 {
+        padding: 16px 16px 24px 16px;
+        font-size: 20px;
+    }
+    .courses .title h1 {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    .responsive.video {
+        display: block;
+        margin-top: 16px;
+    }
+    .Design-Prototype,
+    .Now-and-then {
+        display: none;
+    }
+    footer {
+        border-top: 0 solid grey;
+        font-size: 14px;
+        height: 20px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    footer .f.left {
+        display: none;
+    }
+}
